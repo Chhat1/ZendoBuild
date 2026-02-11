@@ -33,7 +33,7 @@ header > #nav-bottom{
     border-radius: 5px;
 }
 
-.bi-search, .bi-bag, .bi-list{
+.bi-search, .bi-bag, .bi-list, .bi-heart{
     cursor: pointer;
 }
 
@@ -47,7 +47,9 @@ header > #nav-bottom{
     #nav-bottom{
         font-size: 15px !important;
     }
-    
+    .offcanvas-end{
+        width: 100% !important;
+    }
 }
 
 /* Laptop up */

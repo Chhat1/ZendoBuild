@@ -93,7 +93,8 @@
                         aria-controls="offcanvasTop"><i class="bi bi-search fs-6"></i>  ស្វែងរកទំនិញដែលអ្នកចង់បាន.....</button>
                     <!-- Icons -->
                     <i class="bi bi-heart fs-4 text-black fw-bold" style="cursor: pointer;"></i>
-                    <i class="bi bi-bag fs-4 text-black fw-bold" style="cursor: pointer;"></i>
+                    <i class="bi bi-bag fs-4 text-black fw-bold" style="cursor: pointer;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"></i>
 
 
                     <!-- login and register -->
@@ -107,7 +108,8 @@
              <!-- Icon sidebar -->
             <div class="d-flex d-lg-none align-items-center gap-3 mx-2">
                 <i class="bi bi-search  fs-5 d-flex d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"></i>
-                <i class="bi bi-bag fs-5 d-flex d-lg-none"></i>
+                <i class="bi bi-bag fs-5 d-flex d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"></i>
                 <i  class="bi bi-list fs-1 text-black fw-bold d-flex d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></i>
             </div>
         </nav>
@@ -128,12 +130,6 @@
         
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-4">
-                    <li class="nav-item m-0">
-                        <a class="nav-link active text-black" aria-current="page" href="#">WOMEN</a>
-                    </li>
-                    <li class="nav-item m-0">
-                        <a class="nav-link active text-black" aria-current="page" href="#">MEN</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link text-black" href="#">NEW IN</a>
                     </li>
@@ -146,21 +142,11 @@
                     <li class="nav-item">
                         <a class="nav-link text-black" href="#">SHOES</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#">SHOP BY</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link text-black" href="#">COLLECTION</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-danger" href="#">SALE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#">BOYS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#">GIRLS</a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -172,9 +158,28 @@
 
                 <div class="offcanvas-header  py-5 ">
                     <input type="search" class="form-control rounded-0 border-bottom border-dark pt-3 pb-3 border-0 fs-5 shadow-none" placeholder="ស្វែងរកទំនិញដែលអ្នកចង់បាន...">
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button class="btn fs-4 border-0" aria-label="btn"><i class="bi bi-search"></i></button>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    
                 </div>
+            </div>
+        </div>
 
+
+        <!-- Check-Bag -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header px-4">
+                <i class="bi bi-heart fs-4 text-black fw-bold" ></i>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h2 class="text-center fw-bold">Your bag is empty</h2>
+                <p class="text-dard text-center fs-5">Check out our latest arrivals stay up-to-date with latest styles</p>
+                <h4 class="text-center fw-bold">Start shopping</h4>
+                <div class="my-5">
+                    <button class="btn btn-dark w-100 fw-bold text-light mb-4">Shop women</button>
+                    <button class="btn btn-dark w-100 fw-bold text-light">Shop men</button>
+                </div>
             </div>
         </div>
     </header>
