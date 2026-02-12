@@ -8,8 +8,8 @@
 }
 
 header{
-    height: 10vh;
-    /* box-shadow: 0 0 20px rgba(0,0,0,0.2); */
+    height: 13vh;
+    
 }
 
 header > #nav-top{
@@ -36,6 +36,7 @@ header > #nav-bottom{
 .bi-search, .bi-bag, .bi-list, .bi-heart{
     cursor: pointer;
 }
+
 
 /* modal search */
 /* Mobile */

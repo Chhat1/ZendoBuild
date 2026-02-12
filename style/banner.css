@@ -1,0 +1,47 @@
+#banner-image{
+    position: relative;
+    height: 70vh !important;
+}
+
+#main-btn-shop{
+    position: absolute;
+    left: 50%;
+    top: 88%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.btn-shop{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-shop:hover{
+    box-shadow: 0px 5px 15px rgb(0,0,0,0.3);
+    transform: translateY(-5px)
+}
+
+
+/* Phone */
+@media screen and (max-width: 576px){
+    #banner-image{
+        height: 30vh !important;
+    }
+    .container-fluid{
+        margin-top: 1px;
+    }
+    .btn-shop{
+        margin-top: -10px;
+        padding: 5px !important;
+        font-size: 10px !important;
+    }
+}
+
+/* tablet */
+
+@media screen and (min-width: 577px) and (max-width: 993px){
+    #banner-image{
+        height: 40vh !important;
+    }
+}
